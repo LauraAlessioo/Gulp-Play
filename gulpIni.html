@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleGulp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="imagens/gulpPlayLogo.png" type="image/x-icon">
+
+    <title>Inicio | Gulp!Play</title>
+</head>
+
+<body>
+    <div class="background" data-cute-toggle>
+        <div class="descFilme" id="backDesc">
+            <div class="cardDescFilme" data-cute-toggle>
+                <i class='bx bx-x xio' onclick="fecharDesc()"></i>
+                <div class="divMainBannerDesc">
+                    <img src="imagens/chuckyDescBanner.jpg" alt="">
+                    <div class="filterDesc" data-cute-toggle>
+                        <h1>Chucky</h1>
+                    </div>
+                </div>
+                <div class="divPlayDesc">
+                    <button><i class='bx bx-play'></i>Assistir agora</button>
+                    <div class="favoritar">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="restDescContent">
+                    <div class="sinopseFilme">
+                        <div class="classific">
+                            <p>Este filme entra na categoria: <span
+                                    style="color: #ffb829; font-size: 1.5rem;">Médio</span></p>
+                            <img src="imagens/16.png" alt="">
+                        </div>
+                        <p
+                            style="width: 95%; color: #d9d9d9; margin-left: 12px; text-align: justify; font-size: 1.2rem;">
+                            Uma mulher compra para seu filho um boneco amaldiçoado por um assassino em série morto
+                            dentro
+                            uma loja de brinquedos. Pouco antes, ele faz um ritual de vodu com o boneco, que ganha vida
+                            e se
+                            torna um perigoso psicopata.</p>
+                    </div>
+                    <div class="elencoFilme">
+                        <p style="margin-left: 10px; width: 90%;">Elenco: Zackary Arthur, Alyvia Alyn Lind, Björgvin Arnarson, Brad Dourif 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="secBack" data-cute-toggle>
+            <div class="header">
+                <div class="logo">
+                    <img src="imagens/gulpPlayLogo.png" alt="" data-cute-toggle>
+                    <img src="imagens/gulpPLayLogo2.png" class="logo2" data-cute-toggle>
+                </div>
+                <div class="rightBox">
+                    <div class="toggle">
+                        <label class="switch">
+                            <input type="checkbox" onclick="toggleCuteMode()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="perfil">
+                        <div class="boxPerf">
+                            <img src="imagens/coragem.png" alt="" data-cute-toggle>
+                            <p>Coragem</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resto">
+                <div class="sidebar">
+                    <div class="boozinhoBox" data-cute-toggle>
+                        <h4>Oii! Quer amenizar <br> uns sustinhos hoje?</h4>
+                        <img src="imagens/boozinho.png">
+                        <button onclick="abrirModalBoo()">Modo Boozinho</button>
+                    </div>
+                    <div class="continuarAssistindoBox" data-cute-toggle>
+                        <h4>Continuar Assistindo:</h4>
+                        <div class="tumbFilme">
+                            <img src="https://m.media-amazon.com/images/S/pv-target-images/a44f3d834e8f1ce75fca33c860e3d8a76058a401ba6e1a100b967e0bd50b3805.jpg"
+                                class="capa" data-cute-toggle>
+                            <img src="imagens/panicoFofo.png" class="capa2" data-cute-toggle >
+                            <div class="barplay">
+                                <p class="nomeFilme">Pânico</p>
+                                <div class="circlePlay" onclick="entrarEmFullscreen()">
+                                    <i class='bx bx-play'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentFilmes">
+                    <div class="mainBanner">
+                        <img src="imagens/mainBanner2.jpg" alt="" class="capa" data-cute-toggle>
+                        <img src="imagens/mainBanner fofinho2.png" alt="" class="capa2" data-cute-toggle>
+                    </div>
+                    <div class="restFilmes">
+                        <div class="cardFilme">
+                            <img src="imagens/chucky.png" class="capa" data-cute-toggle onclick="abrirDesc()">
+                            <img src="imagens/chuckyFofo.png" class="capa2" data-cute-toggle onclick="abrirDesc()">
+                        </div>
+                        <div class="cardFilme">
+                            <img src="imagens/capaTerffier.jpg" class="capa" data-cute-toggle>
+                            <img src="imagens/TerrifierFofinho.png" class="capa2" data-cute-toggle>
+                        </div>
+                        <div class="cardFilme">
+                            <img src="imagens/annabelle-background-y7umu77k214vq5rt.jpg" class="capa" data-cute-toggle>
+                            <img src="imagens/anabelle fofinha.png" class="capa2" data-cute-toggle>
+                        </div>
+                        <div class="cardFilme">
+                            <img src="imagens/aMorte.png" class="capa" data-cute-toggle>
+                            <img src="imagens/aMorteFofa.png" class="capa2" data-cute-toggle>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="overlay" id="boo">
+            <div class="modalBoozinho" data-cute-toggle>
+                <h1>Modo Boozinho 👻</h1>
+                <i class='bx bx-x xinho' onclick="fecharModalBoo()">
+                </i>
+                <div class="secBoxBoo">
+                    <img src="imagens/Fantasminha Rive.png" alt="">
+                    <div class="rEye">
+                        <img src="imagens/REye.png" alt="">
+                    </div>
+                    <div class="LEye">
+                        <img src="imagens/REye.png" alt="">
+                    </div>
+                </div>
+                <div class="contInfo">
+                    <div class="circPlus" onclick="abrirInfoBoo()" data-cute-toggle>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <div class="infoBoo" id="infoBoo" data-cute-toggle>
+                        <span>O Boozinho é o mascote protetor do Gulp!Play, um fantasminha carismático que tem uma
+                            missão muito importante: avisar quando um susto está prestes a acontecer e deixar tudo menos
+                            assustador com frases reconfortantes. <br><br>
+
+                            Quando o conteúdo fica mais tenso, ele aparece dizendo coisas como:<br><br>
+
+                            “Ah! Isso é só ketchup!”<br><br>
+
+                            “Prometo que esse susto é rapidinho...”<br><br>
+
+                            “Se ficar com medo, eu seguro sua mão!”<br><br>
+
+                            “Pisca e já passou, corajoso!”<br><br>
+                        </span>
+                    </div>
+                </div>
+                <div class="secBoxBoo2" data-cute-toggle>
+                    <button onclick="fecharModalBoo()">Ativar Modo</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="contFilme" style="display: none;" id="containerFilme">
+
+            <div class="headerBoozinho">
+                <i class='bx bxs-chevron-left'  style="color: #d9d9d9; font-size: 30px; cursor: pointer;" onclick="voltarCat()"></i>
+                <img src="imagens/boozinho.png" alt="">
+            </div>
+
+            <video controls id="meuVideo" width="100%">
+
+                <source src="/imagens/Filme PânicoVI ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+            </video>
+
+            <div id="meuModal">
+                <img src="imagens/boozinho.png" alt="">
+                <p>Eii, vai ter uma cena pesadinha ai, Amigo!!
+                    <br>
+                    É só um susto, no máximo ketchup, mas o Boozinho vai te ajudar a passar por isso!<br><br>
+                    <br><br>
+                    O que deseja fazer?
+                </p>
+                <div class="divButtons">
+                    <button class="button" onclick="fecharModal()"></button>
+                    <button class="button2" onclick="avancarPara1min05()"></button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/@rive-app/canvas@2.13.1"></script>
+<script src="main.js"></script>
