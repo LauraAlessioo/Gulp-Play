@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #25272b;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: #910000;
+}
+.primeira-quebra {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 65px;
+    background: #25272b;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+}
+
+.options {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.options li {
+    width: 80px;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    list-style: none;
+    color: #d9d9d9;
+    text-align: center;
+}
+
+.assinar {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.assinar button{
+     width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: auto;
+    transform: scale(0.8);
+}
+.assinar button:hover{
+    background: #910000;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    gap: 5px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: black;
+}
+
+.tile {
+    background-color: #ddd;
+    border: 1px solid #25272b;
+    object-fit: cover;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform, box-shadow;
+}
+
+.tile img:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tile-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.tile-2 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.tile-3 {
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.tile-4 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.tile-5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.tile-6 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.tile-7 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.tile-8 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.tile-8 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.tile-8 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.maincontFirst{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, #000000bb, #000000bb, #25272b);
+    position: absolute;
+    flex-direction: column;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divCont{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.divCont img{
+    width: 50%;
+    height: 40%;
+    object-fit: cover;    
+}
+.divCont p{
+    color: #d9d9d9;
+    pointer-events: visible;
+
+}
+.divCont button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-top: 20px;
+}
+.divCont button:hover{
+    background: #910000;
+    color: white;
+    transition: 0.3s;
+}
+.segunda-quebra{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
