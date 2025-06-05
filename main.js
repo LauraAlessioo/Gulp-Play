@@ -135,7 +135,7 @@ function salvarPerfil() {
   oldImgs.forEach(img => img.remove());
 
   const img = document.createElement('img');
-  img.src = "imagens/loading.gif";
+  img.src = "src/loading.gif";
   img.alt = "Carregando...";
   img.style.maxWidth = "500px";
   img.style.maxHeight = "500px";
