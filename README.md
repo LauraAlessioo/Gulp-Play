@@ -51,7 +51,6 @@ A proposta visual do Gulp!Play mistura:
 Este projeto ainda está em expansão. Algumas das funcionalidades previstas:
 - Página de vídeos com sistema de tags e sugestões
 - Personalização de avatar/perfil
-- Integração com base de dados fictícia para conteúdos
 
 ---
 
@@ -59,12 +58,12 @@ Este projeto ainda está em expansão. Algumas das funcionalidades previstas:
 
 **Laura Alessio**  
 Estudante de Ciência da Computação, apaixonada por UX/UI, design de interação e experiências imersivas.  
-Quer deixar sua marca criando interfaces que surpreendem e acolhem 💖
+Quero deixar minha marca criando interfaces que surpreendem 💖
 
 ---
 
 ## 📫 Contato
 
-Se quiser colaborar, dar feedback ou apenas dizer um "oi", fique à vontade!  
+Se quiser colaborar, dar feedback ou fechar parcerias, fique à vontade!  
 > *Email: laura.alessio@outlook.com, GitHub: LauraAlessioo, LinkedIn: www.linkedin.com/in/laura-alessio*
 
