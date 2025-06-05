@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp!Play</title>
+</head>
+<body>
+    <div class="background1">
+        <div class="header">
+            <img src="src/gulpPlayLogo.png" alt="">
+        </div>
+        <div class="centerBox">
+            <h2>Selecione um perfil</h2>
+            <div class="circulo" onclick="abrirPerfis()">
+                <span>+</span>
+            </div>
+        </div>
+        <div class="header"></div>
+    </div>
+    <div class="background2" id="back2">
+        <div class="header">
+            <h1>Escolha seu medroso</h1>
+        </div>
+        <div class="contPersonagens">
+            <div class="options">
+                <button onclick="fecharPerfis()">Voltar</button>
+                <button onclick="salvarPerfil()">Salvar</button>
+            </div>
+            <div class="box-fileira">
+            <div class="fileira">
+                <div class="desc">
+                    <span>Desenhos Animados</span>
+                </div>
+                <div class="dispPerf">
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/xaxixa.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/scooby.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/coragem.png" alt="" style="position: relative; top: 5px;">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/fumiga.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/jouny.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/c3Po.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="fileira">
+                <div class="desc">
+                    <span>Filmes Live-Action</span>
+                </div>
+                <div class="dispPerf">
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/botas.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/ronaldo.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/howei.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/amigoDoFerris.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/itMenino1.png" alt="">
+                    </div>
+                    <div class="circuloPerfil" onclick="selecionar(this)">
+                        <img src="src/itMenino2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="fileira">
+                <div class="desc">
+                    <span>Animes</span>
+                </div>
+                <div class="dispPerf">
+                            <div class="circuloPerfil">
+                        <img src="src/anime1.png" alt="">
+                    </div>
+                    <div class="circuloPerfil">
+                        <img src="src/anime2.png" alt="">
+
+                    </div>
+                    <div class="circuloPerfil">
+                        <img src="src/anim3.png" alt="">
+
+                    </div>
+                    <div class="circuloPerfil">
+                        <img src="src/anime4.png" alt="">
+
+                    </div>
+                    <div class="circuloPerfil">
+                        <img src="src/anime5.png" alt="">
+
+                    </div>
+                    <div class="circuloPerfil">
+                        <img src="src/anime6.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="loadingCont" id="loadingBack">
+        </div>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>

@@ -1,119 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp!Play</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="icon" href="src/gulpPlayLogo.png">
+    <title>Home | Gulp!Play</title>
 </head>
+
 <body>
-    <div class="background1">
+    <session class="primeira-quebra" id="primeira">
         <div class="header">
-            <img src="src/gulpPlayLogo.png" alt="">
-        </div>
-        <div class="centerBox">
-            <h2>Selecione um perfil</h2>
-            <div class="circulo" onclick="abrirPerfis()">
-                <span>+</span>
-            </div>
-        </div>
-        <div class="header"></div>
-    </div>
-    <div class="background2" id="back2">
-        <div class="header">
-            <h1>Escolha seu medroso</h1>
-        </div>
-        <div class="contPersonagens">
-            <div class="options">
-                <button onclick="fecharPerfis()">Voltar</button>
-                <button onclick="salvarPerfil()">Salvar</button>
-            </div>
-            <div class="box-fileira">
-            <div class="fileira">
-                <div class="desc">
-                    <span>Desenhos Animados</span>
-                </div>
-                <div class="dispPerf">
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/xaxixa.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/scooby.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/coragem.png" alt="" style="position: relative; top: 5px;">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/fumiga.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/jouny.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/c3Po.png" alt="">
-                    </div>
+            <div class="logo">
+                <img src="src/gulpPlayLogo.png" alt="">
+                <div class="options">
+                    <li>Inicio</li>
+                    <li>Sobre</li>
+                    <a href="inicio.html">
+                        <li>Catálogo</li>
+                    </a>
                 </div>
             </div>
-            <div class="fileira">
-                <div class="desc">
-                    <span>Filmes Live-Action</span>
-                </div>
-                <div class="dispPerf">
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/botas.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/ronaldo.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/howei.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/amigoDoFerris.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/itMenino1.png" alt="">
-                    </div>
-                    <div class="circuloPerfil" onclick="selecionar(this)">
-                        <img src="src/itMenino2.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="fileira">
-                <div class="desc">
-                    <span>Animes</span>
-                </div>
-                <div class="dispPerf">
-                            <div class="circuloPerfil">
-                        <img src="src/anime1.png" alt="">
-                    </div>
-                    <div class="circuloPerfil">
-                        <img src="src/anime2.png" alt="">
-
-                    </div>
-                    <div class="circuloPerfil">
-                        <img src="src/anim3.png" alt="">
-
-                    </div>
-                    <div class="circuloPerfil">
-                        <img src="src/anime4.png" alt="">
-
-                    </div>
-                    <div class="circuloPerfil">
-                        <img src="src/anime5.png" alt="">
-
-                    </div>
-                    <div class="circuloPerfil">
-                        <img src="src/anime6.png" alt="">
-
-                    </div>
-                </div>
+            <div class="assinar">
+                <button>Entrar</button>
+                <button>Assinar</button>
             </div>
         </div>
+        <div class="mosaico">
+            <div class="tile tile-1">
+                <img src="https://blackcompany.com.br/wp-content/uploads/2024/10/Thumb-Pecadores.jpg" alt="">
+            </div>
+            <div class="tile tile-2">
+                <img src="src/annabelle-background-y7umu77k214vq5rt.jpg" alt="">
+            </div>
+            <div class="tile tile-3">
+                <img src="src/chucky.png" alt="">
+            </div>
+            <div class="tile tile-4">
+                <img src="src/aMorte.png" alt="">
+            </div>
+            <div class="tile tile-5">
+                <img src="src/annabelle-background-y7umu77k214vq5rt.jpg" alt="">
+            </div>
+            <div class="tile tile-6">
+                <img src="https://i.ytimg.com/vi/rq6dmh1RSR8/maxresdefault.jpg" alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFjy1S3PCk6GtuqdMqBdFmkzLk4qfFnsIo9_gPz-IAnpbRglI6v6ciToRluzmSjqqpNtMxNYGYYDE1xYrfjjLXfD1v4CRAniR7OkwZwpLzK8nVyMjvtl7lZtjchfuhsAlaIT6HE04NaMwCMBZUshb9AY3WDqFVW6d1_TschAs_SDos_qsx8-u8v8Pj5qN1/s650/Sobrenatural%20Porta%20Vermelha.jpg"
+                    alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimNyOSFHwY1k_RLAjrDJ3mCNNRz0oJ5zrqKCm_LRqjsVqqcz99LlSO0lW0zFdCUDXNzKxKoXORtOC9uFj4yA41Fl7q8qtnJgIQaHPOKpzogrVhYnKPqVLkeddF_EB4KPkMFDoNTerX1ARsEUTXQQFZREfw_G5TW132Y5Pvomz8WJCG8-bTeB4o1-Wmgg/s1350/Cartaz%20-%20P%C3%A2nico%20VI.jpg"
+                    alt="">
+            </div>
+            <div class="tile tile-8">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYlBNe5VV8cunAuSCxBPKq6FnZoYvttXofw&s"
+                    alt="">
+            </div>
+            <div class="tile tile-6">
+                <img src="https://m.media-amazon.com/images/I/718IO6twUML._AC_UF1000,1000_QL80_.jpg" alt="">
+            </div>
+            <div class="tile tile-3">
+                <img src="https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2019/02/12115715/nos_3.jpg?resize=648%2C960&ssl=1"
+                    alt="">
+            </div>
+            <div class="tile tile-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZxv7HCUk8meRKxnBHUo2XBvd7N-YqftqfA&s"
+                    alt="">
+            </div>
+            <div class="tile tile-4">
+                <img src="https://i.ytimg.com/vi/ud0cJIl-dQ0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB4CNC6WriVTVTkmeHw8np1zqYBEg"
+                    alt="">
+            </div>
+            <div class="tile tile-6">
+                <img src="https://media.fstatic.com/YycPtHn7brFuHdQtFw15yZewbcE=/322x478/smart/filters:format(webp)/media/movies/covers/2024/08/GTrIu1PbIAAL570.jpg"
+                    alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://miro.medium.com/v2/resize:fit:1000/1*2KNDaurxwRE5na59NBVYTA.jpeg" alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://miro.medium.com/v2/resize:fit:2108/1*Z32lefSVlJV1n9YTms4Z_w.jpeg" alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://i.ytimg.com/vi/ud0cJIl-dQ0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB4CNC6WriVTVTkmeHw8np1zqYBEg"
+                    alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://miro.medium.com/v2/resize:fit:2108/1*Z32lefSVlJV1n9YTms4Z_w.jpeg" alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYlBNe5VV8cunAuSCxBPKq6FnZoYvttXofw&s"
+                    alt="">
+            </div>
+            <div class="tile tile-7">
+                <img src="https://m.media-amazon.com/images/I/718IO6twUML._AC_UF1000,1000_QL80_.jpg" alt="">
+
+            </div>
+            <div class="tile tile-7">
+                <img src="https://blackcompany.com.br/wp-content/uploads/2024/10/Thumb-Pecadores.jpg" alt="">
+
+            </div>
+            <div class="tile tile-7">
+                <img src="src/annabelle-background-y7umu77k214vq5rt.jpg" alt="">
+
+            </div>
         </div>
-        <div class="loadingCont" id="loadingBack">
+        <div class="maincontFirst">
+            <div class="divCont">
+                <img src="src/gulpPlayLogo.png" alt="">
+                <p>Planos acessíveis para te ajudar a vencer esse medo!</p>
+                <a href="inicio.html"><button>Assinar</button></a>
+            </div>
         </div>
-    </div>
+    </session>
+    <session class="segunda-quebra" id="segunda">
+
+
+    </session>
 </body>
+
 </html>
-<script src="main.js"></script>
