@@ -173,12 +173,12 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-    .dispPerf {
-        flex-direction: row;
-        flex-wrap: wrap;
+     .dispPerf {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
         justify-content: center;
         align-items: flex-start;
-        gap: 12px;
         height: fit-content;
     }
     .circuloPerfil {
