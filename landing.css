@@ -215,6 +215,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 600;
+    color: #25272b;
     cursor: pointer;
     pointer-events: auto;
     margin-top: 20px;

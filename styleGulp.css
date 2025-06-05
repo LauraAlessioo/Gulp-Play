@@ -208,6 +208,7 @@ body {
     justify-content: space-around;
 }
 
+
 .boozinhoBox.cute-mode {
     background: #00000018;
 }
@@ -250,6 +251,9 @@ body {
     cursor: pointer;
     background: #ec4f4f1f;
     box-shadow: 0px 0px 0.94rem 0.63rem #f04d412f;
+}
+.boozinhoBoxMoba{
+    display: none;
 }
 
 .continuarAssistindoBox {
@@ -987,4 +991,93 @@ body {
         width: 25rem;
     }
 
+}
+@media screen and (max-width: 768px) {
+  .resto {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.boozinhoBox{
+    display: none;
+}
+
+.boozinhoBoxMoba {
+    width: 96%;
+    height: 150px;
+    background: #d9d9d927;
+    border-radius: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.boozinhoBoxMoba.cute-mode {
+    background: #00000018;
+}
+
+.boozinhoBoxMoba h4 {
+    text-align: center;
+    letter-spacing: 0.06rem;
+    word-spacing: 0.13rem;
+    font-size: 1.12rem;
+    color: #ffffffd0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-0.41rem);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.boozinhoBoxMoba img {
+    width: 120px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.boozinhoBoxMoba button {
+    width: 12.5rem;
+    height: 2.81rem;
+    border: 1px solid #ffffff69;
+    border-radius: 3.125rem;
+    font-weight: bold;
+    font-size: 1.12rem;
+    color: #ffffffab;
+    cursor: pointer;
+    background: #ec4f4f1f;
+    box-shadow: 0px 0px 0.94rem 0.63rem #f04d412f;
+}
+.logo{
+    width: 200px;
+}
+.continuarAssistindoBox{
+    display: none;
+}
+.sidebar{
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mainBanner{
+    width: 95%;
+    height: 35%;
+}
+.contentFilmes{
+    justify-content: start;
+    margin-top: 10px;
+}
+.cardFilme{
+   display: none;
+}
 }
