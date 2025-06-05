@@ -9,6 +9,7 @@ body {
     padding: 0;
     margin: 0;
     background: #202122;
+    overflow: hidden;
 }
 
 .background {
@@ -100,6 +101,12 @@ body {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+}
+.boxPerf i{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
 }
 
 .boxPerf img {
@@ -197,7 +204,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.56rem;
+    justify-content: space-around;
 }
 
 .boozinhoBox.cute-mode {
@@ -796,7 +803,9 @@ body {
     top: 0;
     left: 0;
     margin-left: 10px;
+    cursor: pointer;
 }
+
 .divMainBannerDesc{
     width: 100%;
     height: 35%;

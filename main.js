@@ -12,13 +12,47 @@ function toggleCuteMode() {
   const elements = document.querySelectorAll('[data-cute-toggle]');
   elements.forEach(el => el.classList.toggle('cute-mode'));
 }
-function selecionar(elemento) {
 
-  const todos = document.querySelectorAll('.circuloPerfil');
+// Vetor de perfis disponíveis (de acordo com a ordem dos .circuloPerfil com onclick="selecionar(this)")
+const perfis = [
+  { nome: "Salsicha", foto: "src/xaxixa.png" },
+  { nome: "Scooby", foto: "src/scooby.png" },
+  { nome: "Coragem", foto: "src/coragem.png" },
+  { nome: "Homem-Formiga", foto: "src/fumiga.png" },
+  { nome: "Johnny", foto: "src/jouny.png" },
+  { nome: "C-3PO", foto: "src/c3Po.png" },
+  { nome: "Neville", foto: "src/botas.png" },
+  { nome: "Ron", foto: "src/ronaldo.png" },
+  { nome: "Howard", foto: "src/howei.png" },
+  { nome: "Cameron", foto: "src/amigoDoFerris.png" },
+  { nome: "Stanley", foto: "src/itMenino1.png" },
+  { nome: "Richie", foto: "src/itMenino2.png" },
+  { nome: "Usopp", foto: "src/anime1.png" },
+  { nome: "Zenitsu", foto: "src/anime2.png" },
+  { nome: "Yamcha", foto: "src/anime3.png" },
+  { nome: "Kon", foto: "src/anime4.png" },
+  { nome: "Okarun", foto: "src/anime5.png" },
+  { nome: "Shinji", foto: "src/anime6.png" }
+];
+
+function selecionar(elemento) {
+  const todos = document.querySelectorAll('.circuloPerfil[onclick*="selecionar"]');
   todos.forEach(el => el.classList.remove('selected'));
   elemento.classList.add('selected');
-  
+
+    const index = Array.from(todos).indexOf(elemento);
+  if (index !== -1) {
+    sessionStorage.setItem('perfilSelecionado', JSON.stringify(perfis[index]));
+  }
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+    const perfil = JSON.parse(sessionStorage.getItem('perfilSelecionado'));
+    if (perfil) {
+        const box = document.getElementById('perfilEscolhido');
+        box.innerHTML = `<img src="${perfil.foto}" alt="" data-cute-toggle><p>${perfil.nome}</p> <a href='index.html'><i class='bx bx-log-out'></i></a>`;
+    }
+});
 
 function abrirModalBoo(){
   const modalBoo = document.getElementById('boo');
@@ -152,11 +186,23 @@ function salvarPerfil() {
 
 function abrirDesc(){
   const back = document.getElementById("backDesc");
-  back.style.transform = "scale(1)";
+  back.style.display = "flex";
+  back.style.transition = "none";
+  back.style.transform = "translateY(100vh)";
+  back.style.opacity = "0";
+  void back.offsetWidth;
+  back.style.transition = "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s";
+  back.style.transform = "translateY(0)";
+  back.style.opacity = "1";
 }
 function fecharDesc(){
   const back = document.getElementById("backDesc");
-  back.style.transform = "scale(0)";
+  back.style.transition = "transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.5s";
+  back.style.transform = "translateY(100vh)";
+  back.style.opacity = "0";
+  setTimeout(() => {
+    back.style.display = "none";
+  }, 500);
 }
 
 function voltarCat() {
@@ -180,5 +226,5 @@ function voltarCat() {
   }
 }
 
- 
+
 
