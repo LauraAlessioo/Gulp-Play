@@ -120,6 +120,7 @@ body {
 .boxPerf p {
     margin-bottom: 25px;
     font-weight: 600;
+    width: 50px;
 }
 
 .boxPerf img.cute-mode {
