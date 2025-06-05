@@ -13,8 +13,7 @@ function toggleCuteMode() {
   elements.forEach(el => el.classList.toggle('cute-mode'));
 }
 
-// Vetor de perfis disponíveis (de acordo com a ordem dos .circuloPerfil com onclick="selecionar(this)")
-const perfis = [
+  const perfis = [
   { nome: "Salsicha", foto: "src/xaxixa.png" },
   { nome: "Scooby", foto: "src/scooby.png" },
   { nome: "Coragem", foto: "src/coragem.png" },
@@ -154,11 +153,6 @@ function avancarPara1min05() {
     video.play();
   }
 }
-
-
-
-
-
 
 
 function salvarPerfil() {
