@@ -279,11 +279,14 @@ body {
     word-spacing: 0.19rem;
     margin: 0.31rem;
 }
+.continuarMoba{
+    display: none;
+}
 
 .tumbFilme {
     width: 90%;
     height: 11.25rem;
-    background: #d9d9d9;
+    /* background: #d9d9d9; */
     margin-bottom: 1.25rem;
     border-radius: 0.63rem;
     overflow: hidden;
@@ -375,7 +378,7 @@ body {
     width: 21.87rem;
     height: 78%;
     margin: 0.31rem;
-    background: #d9d9d9;
+    /* background: #d9d9d9; */
     border-radius: 1.56rem;
     overflow: hidden;
     position: relative;
@@ -391,6 +394,27 @@ body {
     left: 0;
     z-index: 0;
 }
+
+/* .cardFilmeMoba {
+    width: 16rem;
+    height: 78%;
+    margin: 0.31rem;
+    background: #d9d9d9;
+    border-radius: 1.56rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.cardFilmeMoba img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+} */
 
 .overlay {
     width: 100vw;
@@ -993,6 +1017,25 @@ body {
 
 }
 @media screen and (max-width: 768px) {
+      .restFilmes {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 10px;
+    }
+  .cardFilme {
+    width: 45vw;
+    min-width: 150px;
+    max-width: 220px;
+    height: 30vw;
+    min-height: 100px;
+    max-height: 10px;
+    margin-top: 10px;
+  }
   .resto {
     width: 100vw;
     height: 90vh;
@@ -1077,7 +1120,38 @@ body {
     justify-content: start;
     margin-top: 10px;
 }
-.cardFilme{
+/* .cardFilme{
    display: none;
+} */
+ .cardDescFilme {
+    width: 96%;
+    height: 98%;
+    background: #32363D;
+    display: flex;
+    flex-direction: column;
+}
+.xio{
+    z-index: 10000;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.continuarMoba{
+    margin-top: 10px;
+    width: 80%;
+    height: 180px;
+    background: #d9d9d910;
+    border-radius: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.continuarMoba h3{
+    margin: 0;
+    margin-top: 5px;
+}
+.background{
+    overflow: auto;
 }
 }
