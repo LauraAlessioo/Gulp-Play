@@ -220,5 +220,21 @@ function voltarCat() {
   }
 }
 
+// Função para rolar os cards de filme para a esquerda ou direita
+function scrollRestFilmes(direction) {
+  const container = document.querySelector('.restFilmes');
+  if (!container) return;
+  // Calcula a largura de dois cards (incluindo gap)
+  const card = container.querySelector('.cardFilme');
+  if (!card) return;
+  const gap = 16; // igual ao CSS
+  const scrollAmount = card.offsetWidth * 2 + gap;
+  if (direction === 'next') {
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  } else {
+    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  }
+}
+
 
 
