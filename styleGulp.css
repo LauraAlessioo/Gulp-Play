@@ -102,7 +102,8 @@ body {
     gap: 0.5rem;
     align-items: center;
 }
-.boxPerf i{
+
+.boxPerf i {
     margin-left: 10px;
     font-size: 20px;
     cursor: pointer;
@@ -252,7 +253,8 @@ body {
     background: #ec4f4f1f;
     box-shadow: 0px 0px 0.94rem 0.63rem #f04d412f;
 }
-.boozinhoBoxMoba{
+
+.boozinhoBoxMoba {
     display: none;
 }
 
@@ -279,7 +281,8 @@ body {
     word-spacing: 0.19rem;
     margin: 0.31rem;
 }
-.continuarMoba{
+
+.continuarMoba {
     display: none;
 }
 
@@ -441,6 +444,7 @@ body {
     gap: 9.37rem;
     position: relative;
 }
+
 .modalBoozinho.cute-mode {
     background: #c59db3;
 }
@@ -468,12 +472,14 @@ body {
     background: #ec4f4f1f;
     box-shadow: 0px 0px 0.94rem 0.63rem #f04d412f;
 }
-.modalBoozinho h1{
+
+.modalBoozinho h1 {
     position: absolute;
     margin: 0;
     color: #d9d9d9;
     font-size: 50px;
 }
+
 .modalBoozinho.cute-mode button {
     background: #f5cde188;
     color: #252525c4;
@@ -566,6 +572,7 @@ body {
     position: relative;
     top: 20%;
 }
+
 .circPlus.cute-mode {
     border: 3px solid #000000bf;
 }
@@ -575,6 +582,7 @@ body {
     width: fit-content;
     color: #d9d9d9fb;
 }
+
 .circPlus.cute-mode i {
     color: #000000bd;
 }
@@ -589,9 +597,11 @@ body {
     border-radius: 20px;
     transition: 0.5s ease;
 }
+
 .infoBoo.cute-mode {
     border: 2px solid #00000078;
 }
+
 #infoBoo.ativo {
     transform: scale(1);
 }
@@ -600,7 +610,8 @@ body {
     width: 10%;
     font-size: 1.166rem;
     color: #d9d9d9da;
-} 
+}
+
 .infoBoo.cute-mode span {
     color: #000000;
 }
@@ -800,7 +811,7 @@ body {
 
 }
 
-.descFilme{
+.descFilme {
     width: 100%;
     height: 100%;
     display: flex;
@@ -814,18 +825,21 @@ body {
     transition: transform 0.5s ease;
     backdrop-filter: blur(5px);
 }
-.cardDescFilme{
+
+.cardDescFilme {
     width: 45%;
     height: 98%;
     background: #32363D;
     display: flex;
     flex-direction: column;
 }
+
 .cardDescFilme.cute-mode {
     background: #a78797dd;
     backdrop-filter: blur(50px);
 }
-.xio{
+
+.xio {
     position: absolute;
     font-size: 40px;
     color: #d9d9d9dd;
@@ -835,7 +849,7 @@ body {
     cursor: pointer;
 }
 
-.divMainBannerDesc{
+.divMainBannerDesc {
     width: 100%;
     height: 35%;
     display: flex;
@@ -846,7 +860,8 @@ body {
     position: relative;
     overflow: hidden;
 }
-.cardDescFilme img{
+
+.cardDescFilme img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -854,9 +869,9 @@ body {
     top: 0;
     left: 0;
     z-index: 0;
-}   
+}
 
-.filterDesc{
+.filterDesc {
     width: 100%;
     height: 100%;
     display: flex;
@@ -868,16 +883,19 @@ body {
     left: 0;
     z-index: 1000;
 }
-.filterDesc.cute-mode{
+
+.filterDesc.cute-mode {
     background: linear-gradient(to bottom, #00000000, #00000000, #a78797bf, #a78797bf);
 }
-.filterDesc h1{
+
+.filterDesc h1 {
     margin: 0px;
     margin-left: 10px;
     font-size: 3.5rem;
     color: #d9d9d9e8;
 }
-.divPlayDesc{
+
+.divPlayDesc {
     width: 100%;
     height: 12%;
     display: flex;
@@ -885,7 +903,8 @@ body {
     align-items: center;
     gap: 10px;
 }
-.divPlayDesc button{
+
+.divPlayDesc button {
     width: 200px;
     margin-left: 10px;
     display: flex;
@@ -902,21 +921,23 @@ body {
     font-size: 1.25rem;
 }
 
-.divPlayDesc button:hover{
+.divPlayDesc button:hover {
     background: #d9d9d9;
     color: #a30101;
     transition: 0.3s ease;
 }
-.divPlayDesc button i{
+
+.divPlayDesc button i {
     font-size: 2.5rem;
     color: #d9d9d9e8;
 }
+
 .divPlayDesc button:hover i {
     color: #a30101;
     transition: 0.3s ease;
 }
 
-.restDescContent{
+.restDescContent {
     width: 100%;
     height: 50%;
     display: flex;
@@ -925,13 +946,15 @@ body {
     margin-top: 20px;
     display: flex;
 }
-.sinopseFilme{
+
+.sinopseFilme {
     width: 65%;
     height: 100%;
     font-weight: 500;
     /* background: plum; */
 }
-.elencoFilme{
+
+.elencoFilme {
     width: 35%;
     height: 100%;
     color: #d9d9d9;
@@ -939,7 +962,7 @@ body {
     justify-content: center;
 }
 
-.favoritar{
+.favoritar {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -949,12 +972,13 @@ body {
     background: #a30101;
     border-radius: 50%;
 }
-.favoritar i{
+
+.favoritar i {
     font-size: 2rem;
     color: #d9d9d9e8;
 }
 
-.classific{
+.classific {
     width: 100%;
     height: 15%;
     position: relative;
@@ -962,13 +986,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.classific p{
+
+.classific p {
     font-size: 1.2rem;
     margin: 0;
     margin-left: 12px;
     color: #d9d9d9;
 }
-.classific img{
+
+.classific img {
     position: relative;
     width: 40px;
     height: 40px;
@@ -1016,8 +1042,9 @@ body {
     }
 
 }
+
 @media screen and (max-width: 768px) {
-      .restFilmes {
+    .restFilmes {
         width: 100%;
         height: auto;
         display: flex;
@@ -1030,131 +1057,191 @@ body {
         scroll-behavior: smooth;
         scrollbar-width: none;
     }
-  .cardFilme {
-    flex: 0 0 80vw;
-    min-width: 180px;
-    max-width: 200px;
-    height: 45vw;
-    min-height: 110px;
-    max-height: 110px;
-    margin-top: 10px;
-  }
-  .resto {
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-}
-.boozinhoBox{
-    display: none;
-}
 
-.boozinhoBoxMoba {
-    width: 96%;
-    height: 150px;
-    background: #d9d9d927;
-    border-radius: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-.boozinhoBoxMoba.cute-mode {
-    background: #00000018;
-}
-
-.boozinhoBoxMoba h4 {
-    text-align: center;
-    letter-spacing: 0.06rem;
-    word-spacing: 0.13rem;
-    font-size: 1.12rem;
-    color: #ffffffd0;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
+    .cardFilme {
+        flex: 0 0 80vw;
+        min-width: 180px;
+        max-width: 200px;
+        height: 45vw;
+        min-height: 110px;
+        max-height: 110px;
+        margin-top: 10px;
     }
 
-    50% {
-        transform: translateY(-0.41rem);
+    .resto {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
     }
 
-    100% {
-        transform: translateY(0px);
+    .boozinhoBox {
+        display: none;
     }
-}
 
-.boozinhoBoxMoba img {
-    width: 120px;
-    animation: float 3s ease-in-out infinite;
-}
+    .boozinhoBoxMoba {
+        width: 96%;
+        height: 150px;
+        background: #d9d9d927;
+        border-radius: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
-.boozinhoBoxMoba button {
-    width: 12.5rem;
-    height: 2.81rem;
-    border: 1px solid #ffffff69;
-    border-radius: 3.125rem;
-    font-weight: bold;
-    font-size: 1.12rem;
-    color: #ffffffab;
-    cursor: pointer;
-    background: #ec4f4f1f;
-    box-shadow: 0px 0px 0.94rem 0.63rem #f04d412f;
-}
-.logo{
-    width: 200px;
-}
-.continuarAssistindoBox{
-    display: none;
-}
-.sidebar{
-    height: fit-content;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
-}
-.mainBanner{
-    width: 95%;
-    height: 130px;
-}
-.contentFilmes{
-    justify-content: start;
-    margin-top: 10px;
-}
-/* .cardFilme{
+
+    .boozinhoBoxMoba.cute-mode {
+        background: #00000018;
+    }
+
+    .boozinhoBoxMoba h4 {
+        text-align: center;
+        letter-spacing: 0.06rem;
+        word-spacing: 0.13rem;
+        font-size: 1.12rem;
+        color: #ffffffd0;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-0.41rem);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .boozinhoBoxMoba img {
+        width: 120px;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .boozinhoBoxMoba button {
+        width: 12.5rem;
+        height: 2.81rem;
+        border: 1px solid #ffffff69;
+        border-radius: 3.125rem;
+        font-weight: bold;
+        font-size: 1.12rem;
+        color: #ffffffab;
+        cursor: pointer;
+        background: #ec4f4f1f;
+        box-shadow: 0px 0px 0.94rem 0.63rem #f04d412f;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .continuarAssistindoBox {
+        display: none;
+    }
+
+    .sidebar {
+        height: fit-content;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .mainBanner {
+        width: 95%;
+        height: 130px;
+    }
+
+    .contentFilmes {
+        justify-content: start;
+        margin-top: 10px;
+    }
+
+    /* .cardFilme{
    display: none;
 } */
- .cardDescFilme {
-    width: 96%;
-    height: 98%;
-    background: #32363D;
-    display: flex;
-    flex-direction: column;
-}
-.xio{
-    z-index: 10000;
-    color: #000;
-    margin-top: 20px;
-    margin-left: 10px;
-}
+    .cardDescFilme {
+        width: 96%;
+        height: 98%;
+        background: #32363D;
+        display: flex;
+        flex-direction: column;
+    }
 
-.continuarMoba{
-    margin-top: 10px;
-    width: 80%;
-    height: 150px;
-    background: #d9d9d910;
-    border-radius: 2.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.continuarMoba h3{
-    margin: 0;
-    margin-top: 5px;
-}
-.resto{
-    overflow: auto;
-}
+    .xio {
+        z-index: 10000;
+        color: #000;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .continuarMoba {
+        margin-top: 10px;
+        width: 80%;
+        height: 150px;
+        background: #d9d9d910;
+        border-radius: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .continuarMoba h3 {
+        margin: 0;
+        margin-top: 5px;
+        color: #d9d9d9;
+    }
+
+    .resto {
+        overflow: auto;
+    }
+
+    .secBoxBoo {
+        display: none;
+    }
+
+    .modalBoozinho h1 {
+        position: absolute;
+        margin: 0;
+        color: #d9d9d9;
+        font-size: 30px;
+    }
+
+    .infoBoo {
+        display: none;
+    }
+
+    .infoBoo span {
+        display: none;
+    }
+
+    .circPlus {
+        display: none;
+    }
+
+    .imgMoba{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgMoba img {
+        width: 200px;
+        object-fit: cover;
+    }
+    .descMobaBoo{
+        width: 96%;
+        height: 200px;
+        display: flex;
+        text-align: center;
+        color: #d9d9d9;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .modalBoozinho{
+        gap: 70px;
+    }
 }
