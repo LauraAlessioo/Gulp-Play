@@ -835,11 +835,20 @@ body {
 }
 
 .cardDescFilme.cute-mode {
-    background: #a78797dd;
+    background: #a78797;
     backdrop-filter: blur(50px);
 }
 
 .xio {
+    position: absolute;
+    font-size: 40px;
+    color: #d9d9d9dd;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.xio.cute-mode {
     position: absolute;
     font-size: 40px;
     color: #d9d9d9dd;
@@ -885,7 +894,7 @@ body {
 }
 
 .filterDesc.cute-mode {
-    background: linear-gradient(to bottom, #00000000, #00000000, #a78797bf, #a78797bf);
+    background: linear-gradient(to bottom, #00000000, #00000000, #a78797bf, #a78797);
 }
 
 .filterDesc h1 {

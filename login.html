@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Gulp!Play</title>
+    <link rel="stylesheet" href="login-cadastro.css">
+    <link rel="icon" href="src/gulpPlayLogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="background-login"></div>
+    <div class="login-cadastro-container" id="login-container">
+        <img src="src/gulpPlayLogo.png" alt="Logo Gulp!Play">
+        <h2>Entrar no Gulp!Play</h2>
+        <form id="login-form">
+            <label for="login-email">E-mail</label>
+            <input type="email" id="login-email" required autocomplete="username">
+            <label for="login-password">Senha</label>
+            <input type="password" id="login-password" required autocomplete="current-password">
+            <button type="submit">Entrar</button>
+        </form>
+        <span class="switch-link" id="to-cadastro">Não tem conta? Cadastre-se</span>
+    </div>
+
+    <div class="login-cadastro-container" id="cadastro-container" style="display:none;">
+        <img src="src/gulpPlayLogo.png" alt="Logo Gulp!Play">
+        <h2>Criar Conta</h2>
+        <form id="cadastro-form">
+            <label for="cadastro-nome">Nome</label>
+            <input type="text" id="cadastro-nome" required autocomplete="name">
+            <label for="cadastro-email">E-mail</label>
+            <input type="email" id="cadastro-email" required autocomplete="username">
+            <label for="cadastro-password">Senha</label>
+            <input type="password" id="cadastro-password" required autocomplete="new-password">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <span class="switch-link" id="to-login">Já tem conta? Entrar</span>
+    </div>
+
+    <script>
+    document.getElementById('to-cadastro').onclick = function() {
+        document.getElementById('login-container').style.display = 'none';
+        document.getElementById('cadastro-container').style.display = 'flex';
+    };
+    document.getElementById('to-login').onclick = function() {
+        document.getElementById('cadastro-container').style.display = 'none';
+        document.getElementById('login-container').style.display = 'flex';
+    };
+    document.getElementById('login-form').onsubmit = function(e) {
+        e.preventDefault();
+        window.location.href = 'inicio.html';
+    };
+    document.getElementById('cadastro-form').onsubmit = function(e) { e.preventDefault(); };
+    </script>
+</body>
+</html>

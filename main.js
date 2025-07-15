@@ -56,8 +56,6 @@ window.addEventListener('DOMContentLoaded', function() {
 function abrirModalBoo(){
   const modalBoo = document.getElementById('boo');
       modalBoo.style.transform = 'scale(1)';
-
-
 }
 function fecharModalBoo(){
   const modalBoo = document.getElementById('boo');
@@ -220,14 +218,12 @@ function voltarCat() {
   }
 }
 
-// Função para rolar os cards de filme para a esquerda ou direita
 function scrollRestFilmes(direction) {
   const container = document.querySelector('.restFilmes');
   if (!container) return;
-  // Calcula a largura de dois cards (incluindo gap)
   const card = container.querySelector('.cardFilme');
   if (!card) return;
-  const gap = 16; // igual ao CSS
+  const gap = 16; 
   const scrollAmount = card.offsetWidth * 2 + gap;
   if (direction === 'next') {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
@@ -235,6 +231,41 @@ function scrollRestFilmes(direction) {
     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').slice(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  const animatedSections = document.querySelectorAll('.beneficios, .catalogo-destaque, .depoimentos, .planos, .footer');
+  const observer = new window.IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show-section');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  animatedSections.forEach(section => {
+    section.classList.add('hide-section');
+    observer.observe(section);
+  });
+
+  const planos = document.querySelectorAll('.planos-lista .plano-item');
+  planos.forEach((plano, idx) => {
+    plano.addEventListener('click', function() {
+      planos.forEach(p => p.classList.remove('destaque'));
+      this.classList.add('destaque');
+    });
+  });
+});
 
 
 
