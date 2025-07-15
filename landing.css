@@ -605,7 +605,12 @@ display: none;
     font-size: 35px;
     margin-right: 20px;
 }
-    
+.mosaico {
+        grid-auto-rows: 100px;
+    }
+    .mosaico .tile:nth-last-child(-n+5) {
+        display: none !important;
+    }
 }
 
 @media (max-width: 900px) {
