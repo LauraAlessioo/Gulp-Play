@@ -527,6 +527,7 @@ body::-webkit-scrollbar-thumb {
 .planos h2 {
     color: #c92a2a;
     text-shadow: 0 2px 8px #000a, 0 1px 0 #fff2;
+    text-align: center;
 }
 .beneficio-item h3,
 .catalogo-card h4,
@@ -605,12 +606,7 @@ display: none;
     font-size: 35px;
     margin-right: 20px;
 }
-.mosaico {
-        grid-auto-rows: 100px;
-    }
-    .mosaico .tile:nth-last-child(-n+5) {
-        display: none !important;
-    }
+    
 }
 
 @media (max-width: 900px) {
